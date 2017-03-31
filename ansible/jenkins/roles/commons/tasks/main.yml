@@ -1,0 +1,16 @@
+---
+  - name: Disable apt autoupgrades
+    systemd:
+      name: "{{ item }}"
+      state: stopped
+      enabled: no
+    with_items:
+      - apt-daily.timer
+
+  - name: Disable apt autoupgrades 1
+    systemd:
+      name: "{{ item }}"
+      state: stopped
+      masked: yes
+    with_items:
+      - apt-daily.service
