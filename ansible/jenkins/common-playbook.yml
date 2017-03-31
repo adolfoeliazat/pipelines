@@ -1,6 +1,5 @@
 ---
-  - hosts: jenkins-master
-    user: jenkins
+  - hosts: all
     become: yes
     become_user: root
     gather_facts: True

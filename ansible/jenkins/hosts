@@ -1,2 +1,5 @@
 [jenkins-master]
-master-jenkins.eastus.cloudapp.azure.com
+master-jenkins.eastus.cloudapp.azure.com ansible_user=jenkins
+
+[ppc]
+140-211-168-51-openstack.osuosl.org ansible_user=ubuntu
